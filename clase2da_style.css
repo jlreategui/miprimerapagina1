@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(10, 9, 9);
+    /* font-size: 30px;
+    text-align: center; */
+}
+/* *body{
+    background-image: linear-gradient(white(0, 21%, 89%),rgb(255, 122, 89));} ;
+    background-image: linear-gradient(hsl(0, 21%, 89%), rgb(255, 122, 89));} */
+    
+}
+/*body {
+    /*background-color: cornflowerblue;
+    color: darkblue;*/
+} */
+
+section {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    /*color: rgb(100, 0, 13); */
+    margin-left: 10px;
+    padding: 20px;
+   /*padding: 50px 30px 20px 60px; */
+}
+
+section article p {
+    line-height: 2;
+}
+
+article {
+    color: rgb(147, 226, 43);   /*COLOR DE TEXTO*/
+    background-color: blue;  /*COLOR DE FONDO*/
+    width: 500px;
+    height: 200px;
+}
+
+/*div {
+    background-color: darkmagenta;
+    margin: 20px;  /* margen de 20  en todos los lados del elemento */
+}  */
+
+
+p {
+    margin: 5px 10px 15px 20px;  /* arriba dcha abajo izda */
+    text-align: center;
+}
+
+.ejemplo1 {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 20px 200px 40px 100px;
+    color: chartreuse;
+}
+.box {
+    background-color: lightgreen;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border: 10px solid black;
+    margin: 70px;
+}
+
+.pagInteres{
+    background-color: beige;
+    width: 800px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 70px;
+    text-align: left;
+}
+
+.flexColumnas{
+    display: flex;
+    height: 200px;
+    background-color: #00A4BD;
+}
+
+.flexColumnas > div {
+    background-color: #EAF0F6;
+    width: 80px;
+    margin: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+    flex: 1 1 200px;
+}
+.avatar {
+    width: 100%;
+    margin: 13%;
+    width: 65px;
+    border-radius: 50px 50% 50% 50%;
+    height: 65px;
+    background: #448ed3 ;
+    position: relative;
+    bottom: 50px;
+}
+.avatar imagen {
+    position: relative;
+    top: -15px; /* ajustar los valores para mover la imagen */
+    left: -5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 30%;
+    border:2px solid #fff;
+    display: block;
+}
+
+.box1 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+  }
+  
+  /* #two {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: blue;
+  } */
+
+  .button{
+    --coloruno: #341F97; /* Puedes cambiar el color de las variables a tu gusto */
+    --colordos: #FFF;
+    height: 60px;
+    width: 350px;                           
+    position: relative;
+    background-color: var(--colordos);
+    border: solid 3px var(--coloruno);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* ANIMACIÓN DE CADA BOTÓN */
+
+/* BOTÓN 1 */
+
+.button-1::before,
+.button-1::after{
+    width: 100%;
+    height: 100%;
+    background-color: var(--coloruno);
+}
+
+.button-1::after{
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: .8s;
+    transition-timing-function: ease;
+}
+
+.button-1:before{
+    transform: translateX(-100%);
+    transition-property: transform;
+    transition-duration: .8s;
+    transition-timing-function: ease;
+}
+
+.button-1:hover::after,
+.button-1:hover::before{
+    transform: translateX(0);
+}
+
+/* BOTÓN 2 */
+
+.button-2::before{
+    width: 100%;
+    height: 100%;
+    background-color: var(--coloruno);
+    top:-100%;
+    transition-property: top;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+}
+
+.button-2:hover::before{
+    top: 0;
+}
+
+/* BOTÓN 3 */
+
+.button-3::before{
+    width: 100%;
+    height: 200%;
+    background-color: var(--coloruno);
+    top:100%;
+    border-radius: 100% 100% 0 0;
+    transition-property:top;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+.button-3:hover:before{
+    top: -100%;
+}
+
+#myCabecera {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  }
+
+  /* .grid-container{
+    display: grid;
+    grid-template-rows: 100px; 100px
+    grid-template-columns: 100px; 100px; 100px;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    /* Las fracciones son una función especial. Esta unidad de medida permite dividir la pantalla en
+     secciones diferentes. Por ejemplo, imaginemos que queremos dividirla en 7 unidades horizontales,
+      teniendo una de las columnas el doble del tamaño de las otras. Para ello, 
+      puedes usar este código: */
+    
+  } */
+----------------------------------------------
+  /* .grid-container {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-gap: 5px;
+  }
+  
+  .grid-item1 {
+    background: blue;
+    text-align: center;
+    border: black 5px solid;
+    grid-column-start: 1; 
+    grid-column-end: 5; 
+    grid-row-start: 1; 
+    grid-row-end: 3;
+  }
+  
+  .grid-item2 {
+    background: grey;
+    text-align: center;
+    border: black 5px solid;
+  }
+   */
+---------------------------------
+/* El primer elemento ocupa cuatro filas y dos columnas.
+Hasta ahora hemos hablado de dos tipos de elementos. Mientras que los últimos cinco elementos solo ocupan una celda, el primer elemento se extiende sobre cuatro columnas y dos filas (para mayor claridad, hemos variado el diseño de los elementos en nuestro ejemplo, pero en un CSS grid no se define el color, los bordes o la sangría de los textos).
+
+Los valores del principio y el final de los elementos se refieren de forma indirecta a las filas y columnas, porque, de hecho, se refiere a la fila respectiva de la rejilla. En el ejemplo, la cuarta columna termina con la quinta línea. Sin embargo, tienes varias opciones para especificar los rangos.
+
+Numeración: las líneas se cuentan de izquierda a derecha y de arriba a abajo.
+Nombres: dentro de grid-template-rows y grid-template-columns se puede poner nombres a las líneas (entre corchetes) y luego referirse a estos nombres.
+Alcance: con span se indica cuántas celdas debe comprender el objeto en una determinada dirección.
+En lugar de definir los puntos de inicio y final en comandos separados, los diseñadores web pueden combinar ambos bajo uno solo. El siguiente código te dará el resultado del ejemplo anterior: */
+   
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+    "area1 area1 area1 area1 area1"
+    "area2 area2 . area3 area3"
+    "area2 area2 area4 area4 area4";
+  }
+  
+  .grid-item1 {
+    background: blue;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area1;
+  }
+  
+  .grid-item2 {
+    background: red;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area2;
+  }
+  
+  .grid-item3 {
+    background: green;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area3;
+  }
+  .grid-item4 {
+    background: yellow;
+    text-align: center;
+    border: black 5px solid;
+    grid-area: area4;
+  }
